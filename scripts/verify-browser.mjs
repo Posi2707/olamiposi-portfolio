@@ -29,7 +29,7 @@ try{
    await send('Emulation.setDeviceMetricsOverride',{width,height:1000,deviceScaleFactor:1,mobile:width<700});
    await visit('/');
    const state=await evaluate(`({width:innerWidth,scroll:document.documentElement.scrollWidth,h1:document.querySelector('h1')?.textContent,links:[...document.querySelectorAll('a')].filter(a=>!a.getAttribute('href')).length})`);
-   assert(state.scroll<=state.width+1,`Horizontal overflow at ${width}: ${state.scroll}`);assert.equal(state.links,0);report.push({viewport:width,...state});
+   if(state.scroll>width+1) console.log(await evaluate(`JSON.stringify([...document.querySelectorAll('body *')].filter(e=>e.getBoundingClientRect().right>${width}).map(e=>({tag:e.tagName,cls:typeof e.className==='string'?e.className:'',right:e.getBoundingClientRect().right})))`)); assert(state.scroll<=width+1,`Horizontal overflow at ${width}: ${state.scroll}`);assert.equal(state.links,0);report.push({viewport:width,...state});
    if(width===1440||width===375){const shot=await send('Page.captureScreenshot',{format:'png',captureBeyondViewport:false});await writeFile(path.join(qa,`home-${width}.png`),Buffer.from(shot.data,'base64'));}
  }
  await send('Emulation.setDeviceMetricsOverride',{width:375,height:900,deviceScaleFactor:1,mobile:true});
