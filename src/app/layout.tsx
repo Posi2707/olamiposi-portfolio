@@ -4,6 +4,7 @@ import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { siteUrl } from '@/lib/site';
 import './globals.css';
+import './audit-improvements.css';
 const sans=Geist({subsets:['latin'],variable:'--font-geist'});
 const mono=Geist_Mono({subsets:['latin'],variable:'--font-mono'});
 export const metadata:Metadata={metadataBase:new URL(siteUrl),title:{default:'Olamiposi Badiya — Software Engineer & Full-Stack Developer',template:'%s | Olamiposi Badiya'},description:'Full-stack engineering with a thoughtful approach to AI evaluation, automation and applied machine learning. Explore projects by Olamiposi Badiya.',openGraph:{type:'website',locale:'en_NG',siteName:'Olamiposi Badiya',title:'Olamiposi Badiya — Software Engineer',description:'Useful software. Thoughtful engineering. Explore full-stack projects, AI tooling and analytical work.'},twitter:{card:'summary_large_image'}};

@@ -1,0 +1,11 @@
+export const skillCatalog = [
+  {title:'Frontend',scope:'Portfolio implementation and web projects',items:'HTML, CSS, JavaScript, React, Next.js, TypeScript and Tailwind CSS; responsive interfaces and accessibility practices.'},
+  {title:'Backend & APIs',scope:'Project work and developing knowledge',items:'Node.js, Express, Python, REST API integration and authentication concepts. FezySlimes and TaskPilot provide source examples.'},
+  {title:'Data & modeling',scope:'Project work, internship exposure and familiarity',items:'Firebase, Firestore, SQL concepts, ER/EER relationships and normalization. MySQL and PostgreSQL are areas of foundational familiarity, not claimed production expertise.'},
+  {title:'AI evaluation',scope:'Practice and conceptual knowledge',items:'Accuracy, relevance, factuality, rubric criteria, reference answers, annotation QA, ambiguity resolution and multi-turn review. Worked examples below are original demonstrations.'},
+  {title:'Python & machine learning',scope:'Analytical work pending artifact verification',items:'Data preparation, scikit-learn, grouped validation, ROC-AUC, leakage detection and reproducible reporting. pandas-style data inspection is a workflow interest; original notebooks are still needed as evidence.'},
+  {title:'Automation & agents',scope:'TaskPilot source evidence and concepts',items:'Typed tool definitions, argument validation, bounded execution, task memory and tracing. Planning quality, end-to-end trajectory evaluation and stronger recovery remain separate concerns.'},
+  {title:'Software QA',scope:'Internship support and portfolio verification',items:'Functional testing, issue reporting, debugging, test documentation and regression thinking. Integration testing is an area of developing practice, not a blanket claim about every project.'},
+  {title:'Development tools',scope:'Project use, internship exposure and learning',items:'Git, GitHub, GitLab workflows, VS Code and Vercel. Postman and Figma are learning tools; no professional proficiency or usage duration is asserted.'},
+  {title:'IT operations',scope:'Internship support and exposure',items:'Windows troubleshooting, Active Directory support, email migration, records management and cross-team technical communication.'},
+];

@@ -30,3 +30,14 @@ No CV PDF/DOCX was found in the initially empty workspace. Confirm these supplie
 - [ ] Optional: configure an email provider if in-site submission is desired. Current mailto fallback truthfully requires visitors to send from their email client.
 - [ ] Compare final biography with the CV and confirm project contribution details before public sharing.
 - [ ] Measure Core Web Vitals on the final public deployment if performance scores are needed.
+
+## Expanded audit — 17 November 2026
+
+- [x] Added fuller professional introduction, About/teamwork/goals content, detailed supplied internship responsibilities and a context-labeled technical skill inventory.
+- [x] Added four future concepts, explicitly not implemented and without demo links or outcomes.
+- [x] Added original evaluation rubric and constructed multi-turn tool-use example. RLHF/SFT are identified as conceptual knowledge only.
+- [x] Added per-project challenges, verification limits and supported outcomes; expanded churn methodology without unverified metrics.
+- [x] FezySlimes live URL and all four project repository URLs returned HTTP 200 in a direct network check. GitHub profile also returned HTTP 200. LinkedIn returned automated-access status 999, so its content remains independently unverified.
+- [x] Captured and visually inspected the actual FezySlimes storefront with welcome popups dismissed. The case study caption gives the capture date; image content is otherwise unedited. Portfolio cards remain labeled illustrations.
+- [ ] Authentic captures for the other projects still require running their originals or obtaining authorized screenshots. The churn case study needs original artifacts before any results can be published.
+- [ ] A real resume PDF remains absent. The user's checked download item cannot be reproduced against the available workspace; no download is invented.

@@ -1,0 +1,2 @@
+import { skillCatalog } from '@/data/skill-catalog';
+export function SkillCatalog(){return <section className="technical-inventory"><div className="section-heading"><div><span className="eyebrow">SKILLS / CONTEXT MATTERS</span><h2>What I use. What I’m developing.</h2><p>Specific tools and concepts, with the level of evidence stated alongside them.</p></div></div><div className="inventory-grid">{skillCatalog.map(group=><article key={group.title}><h3>{group.title}</h3><p>{group.items}</p><small>{group.scope}</small></article>)}</div></section>}

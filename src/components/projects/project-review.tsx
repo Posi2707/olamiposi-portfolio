@@ -1,0 +1,2 @@
+import { projectReviews } from '@/data/project-review';
+export function ProjectReview({slug}:{slug:string}){const review=projectReviews[slug];if(!review)return null;return <section className="project-review"><span className="eyebrow">05 / CHALLENGES, CHECKS & OUTCOMES</span><h2>What the evidence supports.</h2><h3>Engineering challenge</h3><p>{review.challenge}</p><h3>Testing & verification</h3><p>{review.testing}</p><h3>Supported outcome</h3><p>{review.outcome}</p></section>}

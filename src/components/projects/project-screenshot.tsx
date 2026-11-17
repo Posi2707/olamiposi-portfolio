@@ -1,0 +1,2 @@
+import Image from 'next/image';
+export function ProjectScreenshot(){return <figure className="project-screenshot"><Image src="/images/projects/fezyslimes-live.png" alt="FezySlimes live storefront, with its navigation and handmade-slime product introduction" width={1440} height={1000} sizes="(max-width: 700px) 100vw, 1200px" priority/><figcaption>Actual FezySlimes storefront captured on 17 November 2026. Welcome popups dismissed; image content is otherwise unedited.</figcaption></figure>}

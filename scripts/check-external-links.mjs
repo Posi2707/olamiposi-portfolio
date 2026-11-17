@@ -1,0 +1,4 @@
+import { writeFile, mkdir } from 'node:fs/promises';
+const urls=['https://fezyslimesshop.com','https://github.com/GeorgeAdebola/fezyslimes','https://github.com/Posi2707/FINAL-YEAR-PROJECT','https://github.com/Posi2707/taskpilot-ai-agent','https://github.com/Posi2707/An-Interior-landing-page','https://github.com/Posi2707','https://www.linkedin.com/in/olamiposi-badiya-9a573b379/'];
+const results=await Promise.all(urls.map(async url=>{try{const response=await fetch(url,{signal:AbortSignal.timeout(20000),redirect:'follow'});const text=await response.text();return {url,status:response.status,finalUrl:response.url,title:text.match(/<title[^>]*>([^<]*)<\/title>/i)?.[1]||null,verified:response.ok};}catch(error){return {url,verified:false,error:error.message};}}));
+await mkdir('.qa',{recursive:true});await writeFile('.qa/external-links.json',JSON.stringify(results,null,2));console.log(JSON.stringify(results,null,2));
