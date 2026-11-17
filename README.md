@@ -32,7 +32,7 @@ Open http://localhost:3000. `npm run build` produces `out/`, suitable for static
 
 `.openai/hosting.json` retains the Sites project identity and static `out` directory. The canonical origin is centralized in `src/lib/site.ts`. Update this origin when changing the public domain. Sites starts owner-private; sharing can be changed separately when requested.
 
-For Vercel, import this directory, select Next.js, and run the standard build. `output: 'export'` is configured. No environment variables are needed. The contact fallback works without a mail provider, provided a visitor has an email app configured.
+For Vercel, import this directory and use the tracked `vercel.json`: Next.js, `npm ci`, `npm run build`, output `out`. `output: 'export'` is configured. Canonical URLs use `NEXT_PUBLIC_SITE_URL` when explicitly configured, otherwise Vercel’s stable `VERCEL_PROJECT_PRODUCTION_URL`; local/Sites builds retain the original Sites origin. The contact fallback works without a mail provider, provided a visitor has an email app configured.
 
 ## Verification and outstanding content
 

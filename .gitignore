@@ -6,3 +6,5 @@ out/
 !.env.example
 *.tgz
 .qa/
+
+.vercel
