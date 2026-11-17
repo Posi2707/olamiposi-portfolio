@@ -1,0 +1,1 @@
+export default function Loading(){return <div className="container loading-page" role="status"><span className="eyebrow">LOADING THE NEXT IDEA</span><div className="skeleton"/><div className="skeleton"/><span className="sr-only">Loading page…</span></div>}
